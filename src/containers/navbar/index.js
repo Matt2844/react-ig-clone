@@ -9,9 +9,7 @@ export default function Navbar () {
   return (
     <div className="navbar">
       <p>ReactSocial</p>
-
-      <SignInBtn />
-      {user ? <img className="navbar-img" src={user.photoURL} /> : <></>}<SignInBtn />
+      {user ? <img className="navbar-img" src={user.photoURL} /> : <SignInBtn />}
     </div>
   )
 }
